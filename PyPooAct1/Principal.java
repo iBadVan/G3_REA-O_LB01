@@ -1,5 +1,5 @@
 package PyPooAct1;
 
-public class Coordenada {
+public class Principal {
     
 }
