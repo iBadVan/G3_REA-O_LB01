@@ -35,7 +35,20 @@ public class Coordenada {
         this.y=ny;
     }
 
-    
+    public double distancia(Coordenada co){
+        double dx=this.x-co.x;
+        double dy=this.y-co.y;
 
+        double sumacuadrados=(dx*dx)+(dy*dy);
 
+        return Math.sqrt(sumacuadrados);
+    }
+
+    public static double distancia(Coordenada co1,Coordenada co2){
+        return co1.distancia(co2);
+    }
+
+    public String toString(){
+        return "Coordenadas: "+x+" , "+y;
+    }
 }
