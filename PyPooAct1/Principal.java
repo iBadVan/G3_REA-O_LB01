@@ -36,12 +36,10 @@ public class Principal {
 
         System.out.println("Se crearon los rectangulos: R1: "+Rectangulo1+" ; R2: "+Rectangulo2);
         
-
-
-
-
-
-
         scan.close();
+
+
+
+        
     }
 }
