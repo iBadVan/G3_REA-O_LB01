@@ -6,7 +6,7 @@ public class Rectangulo {
 
     public Rectangulo(Coordenada co1, Coordenada co2){
         this.esquina1=new Coordenada(co1);
-        this.esquina1=new Coordenada(co2);
+        this.esquina2=new Coordenada(co2);
     }
 
     public Coordenada getEsquina1() { 
