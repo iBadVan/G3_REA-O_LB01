@@ -36,10 +36,16 @@ public class Principal {
 
         System.out.println("Se crearon los rectangulos: R1: "+Rectangulo1+" ; R2: "+Rectangulo2);
         
+        System.out.println("EL VERIFICADOR DICE: ");
+        if(Verificador.esSobrePos(Rectangulo1, Rectangulo2)){
+            System.out.println("Estan sobre puestos");
+        }else if (Verificador.esJunto(Rectangulo1, Rectangulo2)){
+            System.out.println("Estan Juntos");
+        }else if (Verificador.esDisjunto(Rectangulo1, Rectangulo2)){
+            System.out.println("Estan disjuntos");
+        }
+
         scan.close();
 
-
-
-        
     }
 }
