@@ -145,9 +145,35 @@ public class Verificador {
             r2Y2 = r2.getEsquina1().getY();
         }
 
-        
+        //ahora calculamos la intersección
+        double interX1, interY1, interX2, interY2;
 
+        if (r1X1 > r2X1) {
+            interX1 = r1X1;
+        } else {
+            interX1 = r2X1; 
+        }
     
+        if (r1Y1 > r2Y1) {
+            interY1 = r1Y1;
+        } else {
+            interY1 = r2Y1; 
+        }
+    
+        if (r1X2 < r2X2) {
+            interX2 = r1X2; 
+        } else {
+            interX2 = r2X2;
+        }
+    
+        if (r1Y2 < r2Y2) {
+            interY2 = r1Y2; 
+        } else {
+            interY2 = r2Y2; 
+        }
+
+        return new Rectangulo(new Coordenada((int) interX1, (int) interY1), new Coordenada((int) interX2, (int) interY2));
+
     }
 
 
