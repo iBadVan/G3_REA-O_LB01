@@ -50,11 +50,54 @@ public class Verificador {
         boolean noSeparadosX = !(r1X2 <= r2X1 || r1X1 >= r2X2);
         boolean noSeparadosY = !(r1Y2 <= r2Y1 || r1Y1 >= r2Y2);
 
-
+        return noSeparadosX && noSeparadosY;
         
     }
 
     public static boolean esJunto(Rectangulo r1, Rectangulo r2){
+        //APLicamos la misma logica de arriba
+
+        double r1X1, r1Y1, r1X2, r1Y2;
+
+        if (r1.getEsquina1().getX() < r1.getEsquina2().getX()) {
+            r1X1 = r1.getEsquina1().getX();
+            r1X2 = r1.getEsquina2().getX();
+        } else {
+            r1X1 = r1.getEsquina2().getX();
+            r1X2 = r1.getEsquina1().getX();
+        }
+
+        if (r1.getEsquina1().getY() < r1.getEsquina2().getY()) {
+            r1Y1 = r1.getEsquina1().getY();
+            r1Y2 = r1.getEsquina2().getY();
+        } else {
+            r1Y1 = r1.getEsquina2().getY();
+            r1Y2 = r1.getEsquina1().getY();
+        }
+        
+        double r2X1, r2Y1, r2X2, r2Y2;
+        if (r2.getEsquina1().getX() < r2.getEsquina2().getX()) {
+            r2X1 = r2.getEsquina1().getX();
+            r2X2 = r2.getEsquina2().getX();
+        } else {
+            r2X1 = r2.getEsquina2().getX();
+            r2X2 = r2.getEsquina1().getX();
+        }
+    
+        if (r2.getEsquina1().getY() < r2.getEsquina2().getY()) {
+            r2Y1 = r2.getEsquina1().getY();
+            r2Y2 = r2.getEsquina2().getY();
+        } else {
+            r2Y1 = r2.getEsquina2().getY();
+            r2Y2 = r2.getEsquina1().getY();
+        }
+
+        
+
+
+
+
+
         boolean juntoVertical = (r1.getEsquina2().getY() == r2.getEsquina1().getY() || r1.getEsquina1().getY() == r2.getEsquina2().getY()) &&
         (r1.getEsquina1().getX() < r2.getEsquina2().getX() && r1.getEsquina2().getX() > r2.getEsquina1().getX());
 
