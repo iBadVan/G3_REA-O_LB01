@@ -105,4 +105,15 @@ public class Verificador {
         } else { return true;}
 
     }
+
+    public static Rectangulo rectanguloSobre(Rectangulo r1, Rectangulo r2) {
+        if (!esSobrePos(r1, r2)) {
+            return null; 
+        }
+    
+    }
+
+
+
+
 }
