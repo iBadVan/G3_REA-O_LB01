@@ -45,18 +45,15 @@ public class Principal {
             System.out.println("El Rectángulo A y B estan sobre puestos");
 
             Rectangulo rectSobrePuesto = Verificador.rectanguloSobre(Rectangulo1, Rectangulo2);
-            
+            if (rectSobrePuesto != null) {
+                System.out.println("Área de la sobreposición: " + rectSobrePuesto.calculoArea());
+            }
 
         }else if (Verificador.esJunto(Rectangulo1, Rectangulo2)){
             System.out.println("El Rectángulo A y B  estan Juntos");
         }else if (Verificador.esDisjunto(Rectangulo1, Rectangulo2)){
             System.out.println("El Rectángulo A y B estan disjuntos");
         }
-
-        
-
-
-        
 
         scan.close();
 
