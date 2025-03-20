@@ -14,10 +14,8 @@ public class ContainerRect {
         this.distancias= new double[tamano];
         this.areas= new double[tamano];
         int numRect=0;
-    }
-
-    
-
-
-    
+    }    
 }
+
+
+
