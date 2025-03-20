@@ -47,10 +47,10 @@ public class Verificador {
             r2Y2 = r2.getEsquina1().getY();
         }
 
-        boolean noSeparadosX = !(r1X2 <= r2X1 || r1X1 >= r2X2);
-        boolean noSeparadosY = !(r1Y2 <= r2Y1 || r1Y1 >= r2Y2);
+        boolean seSuperponenX  = !(r1X2 <= r2X1 || r1X1 >= r2X2);
+        boolean seSuperponenY = !(r1Y2 <= r2Y1 || r1Y1 >= r2Y2);
 
-        return noSeparadosX && noSeparadosY;
+        return seSuperponenX  && seSuperponenY;
         
     }
 
