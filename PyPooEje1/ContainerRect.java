@@ -36,14 +36,14 @@ public class ContainerRect {
             Coordenada esquina1= (arregloRectangulos[i].getEsquina1()); 
             Coordenada esquina2= (arregloRectangulos[i].getEsquina2()); 
 
-            String coordenadas="["+esquina1.getX()+", "+esquina1.getY()+"] " + " ["+esquina2.getX()+", "+esquina2.getY()+"]" ;
+            String coordenadas="["+esquina1.getX()+", "+esquina1.getY()+"] " + 
+            " ["+esquina2.getX()+", "+esquina2.getY()+"]" ;
 
             textoF.append( "|| #Rectagngulo: "+ (i+1) );
             textoF.append( " || Coordenadas: "+coordenadas );
             textoF.append( " || Distancia: " + distancias[i] );
             textoF.append( " || Área: "+ areas[i] );
               
-
         }
         return textoF.toString();
         
