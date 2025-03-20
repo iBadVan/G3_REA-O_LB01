@@ -92,17 +92,8 @@ public class Verificador {
             r2Y2 = r2.getEsquina1().getY();
         }
 
-        
-
-
-
-
-
-        boolean juntoVertical = (r1.getEsquina2().getY() == r2.getEsquina1().getY() || r1.getEsquina1().getY() == r2.getEsquina2().getY()) &&
-        (r1.getEsquina1().getX() < r2.getEsquina2().getX() && r1.getEsquina2().getX() > r2.getEsquina1().getX());
-
-        boolean juntoHorizontal = (r1.getEsquina2().getX() == r2.getEsquina1().getX() || r1.getEsquina1().getX() == r2.getEsquina2().getX()) &&
-        (r1.getEsquina1().getY() < r2.getEsquina2().getY() && r1.getEsquina2().getY() > r2.getEsquina1().getY());
+        boolean juntoVertical = (r1Y2 == r2Y1 || r1Y1 == r2Y2) && (r1X1 < r2X2 && r1X2 > r2X1);
+        boolean juntoHorizontal = (r1X2 == r2X1 || r1X1 == r2X2) && (r1Y1 < r2Y2 && r1Y2 > r2Y1);
 
         return juntoVertical || juntoHorizontal;
     }
