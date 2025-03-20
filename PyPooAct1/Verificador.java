@@ -11,15 +11,25 @@ public class Verificador {
         NO funciona si es que uno esta dentro y en algunos casos de si esta al revés.
         */
 
-        double r1X1 = Math.min(r1.getEsquina1().getX(), r1.getEsquina2().getX());
-        double r1Y1 = Math.min(r1.getEsquina1().getY(), r1.getEsquina2().getY());
-        double r1X2 = Math.max(r1.getEsquina1().getX(), r1.getEsquina2().getX());
-        double r1Y2 = Math.max(r1.getEsquina1().getY(), r1.getEsquina2().getY());
+        //ACA OBTENGO EL PAR ORDENADO MAS PEQUEÑO POSIBLE PARA CADA EL R1
+        double r1X1, r1Y1, r1X2, r1Y2;
+        if (r1.getEsquina1().getX() < r1.getEsquina2().getX()) {
+            r1X1 = r1.getEsquina1().getX();
+            r1X2 = r1.getEsquina2().getX();
+        } else {
+            r1X1 = r1.getEsquina2().getX();
+            r1X2 = r1.getEsquina1().getX();
+        }
+
+        if (r1.getEsquina1().getY() < r1.getEsquina2().getY()) {
+            r1Y1 = r1.getEsquina1().getY();
+            r1Y2 = r1.getEsquina2().getY();
+        } else {
+            r1Y1 = r1.getEsquina2().getY();
+            r1Y2 = r1.getEsquina1().getY();
+        }
 
         
-
-
-
     }
 
     public static boolean esJunto(Rectangulo r1, Rectangulo r2){
