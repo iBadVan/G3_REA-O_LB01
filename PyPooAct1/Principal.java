@@ -43,6 +43,9 @@ public class Principal {
         System.out.println("EL VERIFICADOR DICE: ");
         if(Verificador.esSobrePos(Rectangulo1, Rectangulo2)){
             System.out.println("El Rectángulo A y B estan sobre puestos");
+
+            
+
         }else if (Verificador.esJunto(Rectangulo1, Rectangulo2)){
             System.out.println("El Rectángulo A y B  estan Juntos");
         }else if (Verificador.esDisjunto(Rectangulo1, Rectangulo2)){

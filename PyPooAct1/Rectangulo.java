@@ -28,4 +28,10 @@ public class Rectangulo {
         return "Rectangulo [" + esquina1 + ", " + esquina2 + "]";
     }
 
+    public double calculoArea() {
+        double base = Math.abs(esquina1.getX() - esquina2.getX());
+        double altura = Math.abs(esquina1.getY() - esquina2.getY());
+        return base * altura;
+    }
+
 }
