@@ -42,7 +42,7 @@ public class ContainerRect {
             textoF.append( "|| #Rectagngulo: "+ (i+1) );
             textoF.append( " || Coordenadas: "+coordenadas );
             textoF.append( " || Distancia: " + distancias[i] );
-            textoF.append( " || Área: "+ areas[i] );
+            textoF.append( " || Área: "+ areas[i] + "\n");
               
         }
         return textoF.toString();
