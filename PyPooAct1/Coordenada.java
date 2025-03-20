@@ -1,15 +1,15 @@
 package PyPooAct1;
 
 public class Coordenada {
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
     public Coordenada(){
         this.x=0;
         this.y=0;
     }
 
-    public Coordenada(int nx, int ny){
+    public Coordenada(double nx, double ny){
         this.x=nx;
         this.y=ny;
     }
@@ -19,19 +19,19 @@ public class Coordenada {
         this.y=co.y;
     }
 
-    public int getX(){
+    public double getX(){
         return this.x;
     }
 
-    public void setX(int nx){
+    public void setX(double nx){
         this.x=nx;
     }
 
-    public int getY(){
+    public double getY(){
         return this.y;
     }
 
-    public void setY(int ny){
+    public void setY(double ny){
         this.y=ny;
     }
 

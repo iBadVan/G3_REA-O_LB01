@@ -172,7 +172,7 @@ public class Verificador {
             interY2 = r2Y2; 
         }
 
-        return new Rectangulo(new Coordenada((int) interX1, (int) interY1), new Coordenada((int) interX2, (int) interY2));
+        return new Rectangulo(new Coordenada(interX1, interY1), new Coordenada( interX2, interY2));
 
     }
 
