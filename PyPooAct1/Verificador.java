@@ -11,11 +11,15 @@ public class Verificador {
         NO funciona si es que uno esta dentro y en algunos casos de si esta al revés.
         */
 
-        boolean noSeparadosX = !(r1.getEsquina2().getX()<=r2.getEsquina1().getX() || r1.getEsquina1().getX()>=r2.getEsquina2().getX());   
-    
-        boolean noSeparadosY = !(r1.getEsquina2().getY() <= r2.getEsquina1().getY() || r1.getEsquina1().getY() >= r2.getEsquina2().getY());
+        double r1X1 = Math.min(r1.getEsquina1().getX(), r1.getEsquina2().getX());
+        double r1Y1 = Math.min(r1.getEsquina1().getY(), r1.getEsquina2().getY());
+        double r1X2 = Math.max(r1.getEsquina1().getX(), r1.getEsquina2().getX());
+        double r1Y2 = Math.max(r1.getEsquina1().getY(), r1.getEsquina2().getY());
+
         
-        return noSeparadosX && noSeparadosY;
+
+
+
     }
 
     public static boolean esJunto(Rectangulo r1, Rectangulo r2){
