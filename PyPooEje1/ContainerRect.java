@@ -33,8 +33,8 @@ public class ContainerRect {
         
         for (int i=0; i<numRect; i++){
 
-            Coordenada esquina1=new Coordenada(arregloRectangulos[i].getEsquina1()); 
-            Coordenada esquina2=new Coordenada(arregloRectangulos[i].getEsquina2()); 
+            Coordenada esquina1= (arregloRectangulos[i].getEsquina1()); 
+            Coordenada esquina2= (arregloRectangulos[i].getEsquina2()); 
 
             String coordenadas="["+esquina1.getX()+", "+esquina1.getY()+"] " + " ["+esquina2.getX()+", "+esquina2.getY()+"]" ;
 
