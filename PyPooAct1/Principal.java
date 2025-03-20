@@ -44,6 +44,7 @@ public class Principal {
         if(Verificador.esSobrePos(Rectangulo1, Rectangulo2)){
             System.out.println("El Rectángulo A y B estan sobre puestos");
 
+            Rectangulo rectSobrePuesto = Verificador.rectanguloSobre(Rectangulo1, Rectangulo2);
             
 
         }else if (Verificador.esJunto(Rectangulo1, Rectangulo2)){
